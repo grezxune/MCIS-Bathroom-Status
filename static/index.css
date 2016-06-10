@@ -1,0 +1,26 @@
+.bathroom {
+	float: left;
+	background: grey;
+	margin: 20px;
+	text-align: center;
+}
+
+.stall {
+	background: yellow;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+}
+
+.bathroom-name {
+	color: blue;
+	text-decoration: underline;
+}
+
+.stall-name {
+	color: black;
+}
+
+.stall-status {
+	color: brown;
+}

@@ -1,10 +1,24 @@
 <!doctype html>
 	<head>
 		<title>MCIS Bathroom Status</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}"/>
 	</head>
 	<body>
 		<div>
-			<h1>Testing MCIS Bathroom App</h1>
+			<h1>Bathroom Statuses</h1>
+			{% for bathroom in bathrooms %}
+			<div class="bathroom">
+				<h2 class="bathroom-name">{{bathroom.name}}</h2>
+
+				{% for stall in bathroom.stalls %}
+				<div class="stall">
+					<h1 class="stall-name">{{stall.name}}</h1>
+					<h3 class="stall-status">{{stall.status}}</h3>
+				</div>
+				{% endfor %}
+
+			</div>
+			{% endfor %}
 		</div>
 	</body>
 </html>
