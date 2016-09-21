@@ -4,7 +4,7 @@ This application is designed to ease the pain of walking to the bathroom only to
 
 ## Setup
 
-### Install dependencies
+### Required software
 
 Python 2 is required.
 
@@ -15,6 +15,10 @@ We recommend using virtual environments for python projects. If python-virtualen
 Issue command `virtualenv venv`
 
 Activate virtual environment with `source venv/bin/activate`
+
+### Install Dependencies
+
+Issue command `pip install -r requirements.txt`
 
 ### Run server
 
